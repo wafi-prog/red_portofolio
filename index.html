@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wafiyatin Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="image/logo porto.png">
+
+</head>
+
+<body class="text-white">
+
+    <nav class="fixed w-full z-50 glass px-6 md:px-16 py-4 flex justify-between items-center">
+        <h1 class="font-bold text-lg text-red-400">Wafiyatin</h1>
+        <div class="hidden md:flex gap-8">
+            <a class="nav-link" href="#hero">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#experience">Experience</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </div>
+
+        <button onclick="toggleMenu()" class="md:hidden text-red-400">
+            <i data-lucide="menu"></i>
+        </button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden fixed top-20 right-6 w-56 bg-[#540808] rounded-2xl shadow-2xl p-6 flex flex-col gap-4 z-50 border border-red-900 transition-all duration-300">
+        <a onclick="toggleMenu()" href="#hero">Home</a>
+        <a onclick="toggleMenu()" href="#about">About</a>
+        <a onclick="toggleMenu()" href="#portfolio">Portfolio</a>
+        <a onclick="toggleMenu()" href="#experience">Experience</a>
+        <a onclick="toggleMenu()" href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="sectionFade min-h-screen flex items-center px-6 md:px-16 pt-24">
+        <div class="grid md:grid-cols-2 gap-12 items-center w-full">
+
+            <div class="animate-fade opacity-0 translate-y-8 transition duration-700">
+                <p class="text-red-400 mb-2 tracking-widest text-sm">DEVELOPER MODE • PORTFOLIO</p>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                    Welcome to <br> My Portfolio 
+                </h1>
+
+                <h2 class="text-3xl mt-6 font-semibold text-red-300">
+                    Full Stack Developer
+                </h2>
+
+                <p class="mt-4 text-gray-300 max-w-xl">
+                    Membangun web modern, cepat, dan user-friendly menggunakan PHP, Laravel,
+                    JavaScript, Tailwind CSS, dan teknologi full-stack lainnya.
+                </p>
+
+                <!-- skill -->
+                <div class="flex flex-wrap gap-3 mt-6">
+                    <span class="px-4 py-1 bg-red-900 rounded-full glow">PHP</span>
+                    <span class="px-4 py-1 bg-red-900 rounded-full glow">Laravel</span>
+                    <span class="px-4 py-1 bg-red-900 rounded-full glow">JavaScript</span>
+                    <span class="px-4 py-1 bg-red-900 rounded-full glow">Tailwind</span>
+                    <span class="px-4 py-1 bg-red-900 rounded-full glow">CSS</span>
+                </div>
+
+                <!-- tombol -->
+                <div class="mt-8 flex gap-4">
+                    <a href="#portfolio" class="btn-red glow">Projects</a>
+                    <a href="#contact" class="btn-red">Contact</a>
+                </div>
+            </div>
+
+            <!-- RIGHT UI CARD -->
+            <div class="flex justify-center ">
+
+                <div class="floating-card rounded-2xl">
+
+                    <div class="glass p-10 rounded-2xl w-[320px] flex flex-col items-center glow">
+                        <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-red-500 mb-4">
+                            <img src="image/myfotoqu.jpeg" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-semibold text-red-300">
+                            Wafiyatin 'Athiyyah
+                        </h3>
+
+                        <p class="text-gray-300 text-sm mb-4">
+                            Web Developer
+                        </p>
+
+                        <div class="flex gap-6 mt-4 text-center">
+                            <div>
+                                <p class="text-2xl font-bold text-white">5+</p>
+                                <p class="text-xs text-gray-400">Projects</p>
+                            </div>
+
+                            <div>
+                                <p class="text-2xl font-bold text-white">1 Yr</p>
+                                <p class="text-xs text-gray-400">Internship</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--section about -->
+    <section id="about" class="sectionFade min-h-screen flex items-center px-6 md:px-16 pt-20">
+        <div class="w-full">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-red-300">About Me</h2>
+                <p class="text-gray-400 mt-2">Passionate about transforming ideas into impactful digital experiences.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <div class="animate-fade opacity-0 translate-y-8 transition duration-700">
+                    <h3 class="text-3xl font-semibold mb-4">
+                        Hello, I'm <br>
+                        <span class="text-red-400 text-4xl font-bold">Wafiyatin'Athiyyah</span>
+                    </h3>
+
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Halo, saya Wafiyatin 'Athiyyah, seorang web developer yang berfokus pada pengembangan aplikasi
+                        dan website yang fungsional serta user-friendly.
+                        Saya aktif dalam organisasi, berpengalaman memimpin tim, dan berpengalaman dalam presentasi dan
+                        komunikasi publik. Saya juga memiliki pengalaman mengajar IT untuk siswa SMA,
+                        sehingga terbiasa menyampaikan materi teknis secara jelas dan terstruktur. Beberapa proyek yang
+                        saya kerjakan mencakup pengembangan website dan aplikasi dari perencanaan hingga implementasi.
+                    </p>
+
+                    <p class="text-sm text-gray-500 mt-4 italic">
+                        "Capable of communicating in Arabic Language"
+                    </p>
+                    <br>
+                    <a href="My_CV.pdf" class="btn-red glow" download>Download CV</a>
+
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 rounded-full blur-2xl bg-red-600 opacity-40"></div>
+                        <div class="w-72 h-72 rounded-full overflow-hidden border-4 border-red-500 relative glow">
+                            <img src="image/fifi.jpg" class="w-full h-full object-cover">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- sertifikat -->
+    <section id="portfolio" class=" sectionFade min-h-screen px-6 md:px-16 py-20">
+        <div class="text-center mb-10">
+            <h2 class="text-4xl font-bold text-red-300">Portfolio Showcase</h2>
+            <p class="text-gray-400 mt-2 max-w-xl mx-auto">
+                Explore my journey through projects, certifications, and technical skills.
+            </p>
+        </div>
+
+        <!-- MAIN TABS -->
+        <div class="flex justify-center gap-6 mb-8">
+            <button onclick="showTab('projects', this)"
+                class="tabBtn active px-6 py-2 rounded-lg glow">Projects</button>
+            <button onclick="showTab('certificates', this)"
+                class="tabBtn glass px-6 py-2 rounded-lg">Certificates</button>
+            <button onclick="showTab('stack', this)" class="tabBtn glass px-6 py-2 rounded-lg">Skills</button>
+
+        </div>
+
+
+
+        <!-- bagian projects -->
+        <div id="projects" class="tabContent grid md:grid-cols-3 gap-6">
+
+            <div class="projectCard all glass rounded-xl p-4 hover:scale-105 transition">
+                <img src="image/projek2.png" class="rounded mb-3">
+                <h3 class="font-semibold">Personal Portfolio Website</h3>
+                <p class="text-gray-400 text-sm">
+                    Website portofolio responsive built with Tailwind CSS untuk menampilkan profil dan project
+                </p>
+
+            </div>
+
+            <div class="projectCard design glass rounded-xl p-4 hover:scale-105 transition">
+                <img src="image/projek1.png" class="rounded mb-3">
+                <h3 class="font-semibold">PeRan -Reading Platform</h3>
+                <p class="text-gray-400 text-sm">
+                    Web platform untuk membaca dan menulis cerita dengan fitur rating, komentar, dan bookmark
+                </p>
+
+            </div>
+
+            <div class="projectCard editing glass rounded-xl p-4 hover:scale-105 transition">
+                <img src="image/projek3.png" class="rounded mb-3">
+                <h3 class="font-semibold">Developer Bootcamp Website</h3>
+                <p class="text-gray-400 text-sm">
+                    Website pembelajaran dengan fitur kelas, testimonial, dan pricing berbasis MySQL [Reference-Based
+                    Project]
+                </p>
+
+            </div>
+
+            <div class="projectCard editing glass rounded-xl p-4 hover:scale-105 transition">
+                <img src="image/projek4.png" class="rounded mb-3">
+                <h3 class="font-semibold">Greenovate -Recycling App</h3>
+                <p class="text-gray-400 text-sm">
+                    Aplikasi Flutter & Laravel untuk edukasi dan manajemen produk daur ulang
+                </p>
+
+            </div>
+
+            <div class="projectCard all glass rounded-xl p-4 hover:scale-105 transition">
+                <img src="image/projek5.png" class="rounded mb-3">
+                <h3 class="font-semibold">QuickTix -Ticketing App</h3>
+                <p class="text-gray-400 text-sm">
+                    Aplikasi pemesanan tiket dengan fitur transaksi dan QR code berbasis Flutter
+                </p>
+
+            </div>
+
+            <div class="projectCard editing glass rounded-xl p-4 hover:scale-105 transition">
+                <img src="image/projek7.png" class="rounded mb-3">
+                <h3 class="font-semibold">Admin Dashboard System</h3>
+                <p class="text-gray-400 text-sm">
+                    Dashboard CRUD berbasis MySQL untuk manajemen data produk dan kategori
+                </p>
+
+            </div>
+            <div class="projectCard editing glass rounded-xl p-4 hover:scale-105 transition">
+                <img src="image/projek8.png" class="rounded mb-3">
+                <h3 class="font-semibold">Student Information System</h3>
+                <p class="text-gray-400 text-sm">
+                    Website manajemen data mahasiswa menggunakan Laravel Filament
+                </p>
+
+
+            </div>
+            <div class="projectCard editing glass rounded-xl p-4 hover:scale-105 transition">
+                <img src="image/projek9.png" class="rounded mb-3">
+                <h3 class="font-semibold">E-Commerce Website</h3>
+                <p class="text-gray-400 text-sm">
+                    Website toko online dengan fitur produk, cart, dan checkout [Reference-Based Project]
+                </p>
+
+
+            </div>
+            <div class="projectCard editing glass rounded-xl p-4 hover:scale-105 transition">
+                <img src="image/projek10.png" class="rounded mb-3">
+                <h3 class="font-semibold">Employee Attendance System</h3>
+                <p class="text-gray-400 text-sm">
+                    Website presensi karyawan berbasis web dengan fitur dashboard, office management, user roles, dan
+                    scheduling kerja [Reference-Based Project]
+                </p>
+            </div>
+
+        </div>
+
+        <!-- sertifikat -->
+        <div id="certificates" class="tabContent hidden grid md:grid-cols-3 gap-6">
+            <div class="projectCard all glass rounded-xl p-4 hover:scale-105 transition">
+                <img src="image/aws.png" class="rounded mb-3">
+                <h3 class="font-semibold">AWS Cloud & Generative AI</h3>
+                <p class="text-gray-400 text-sm">
+                    Cloud and Generative AI competency certification by Dicoding </p>
+            </div>
+
+            <div class="projectCard design glass rounded-xl p-4 hover:scale-105 transition">
+                <img src="image/ai.png" class="rounded mb-3">
+                <h3 class="font-semibold">Artificial Intelligence Training</h3>
+                <p class="text-gray-400 text-sm">Completed foundational training in Artificial Intelligence concepts and
+                    applications.</p>
+            </div>
+
+            <div class="projectCard editing glass rounded-xl p-4 hover:scale-105 transition">
+                <img src="image/komdigi.png" class="rounded mb-3">
+                <h3 class="font-semibold">Programming Fundamentals Training</h3>
+                <p class="text-gray-400 text-sm">Training on basic programming concepts and problem-solving fundamentals
+                </p>
+            </div>
+
+            <div class="projectCard editing glass rounded-xl p-4 hover:scale-105 transition">
+                <img src="image/python1.png" class="rounded mb-3">
+                <h3 class="font-semibold">Python Programming Certification</h3>
+                <p class="text-gray-400 text-sm">Competency certification in Python programming and implementation</p>
+            </div>
+
+            <div class="projectCard editing glass rounded-xl p-4 hover:scale-105 transition">
+                <img src="image/30juz.png" class="rounded mb-3">
+                <h3 class="font-semibold">30 Juz Completion Certification</h3>
+                <p class="text-gray-400 text-sm">Certification of completing 30 Juz memorization program</p>
+            </div>
+
+            <div class="projectCard editing glass rounded-xl p-4 hover:scale-105 transition">
+                <img src="image/webinar.png" class="rounded mb-3">
+                <h3 class="font-semibold">Future Start with Empathy – Webinar Certificate</h3>
+                <p class="text-gray-400 text-sm">Certificate of participation in Future Start with Empathy webinar</p>
+            </div>
+        </div>
+
+        <!-- Skills -->
+       <div id="stack" class="tabContent hidden grid grid-cols-2 md:grid-cols-4 gap-8">
+
+    <!-- Skill Card -->
+    <div class="skill-card">
+        <i class="devicon-html5-plain colored text-5xl mb-4"></i>
+        <p>HTML</p>
+    </div>
+
+    <div class="skill-card">
+        <i class="devicon-css3-plain colored text-5xl mb-4"></i>
+        <p>CSS</p>
+    </div>
+
+    <div class="skill-card">
+        <i class="devicon-javascript-plain colored text-5xl mb-4"></i>
+        <p>JavaScript</p>
+    </div>
+
+    <div class="skill-card">
+        <i class="devicon-php-plain colored text-5xl mb-4"></i>
+        <p>PHP</p>
+    </div>
+
+    <div class="skill-card">
+        <i class="devicon-laravel-plain colored text-5xl mb-4"></i>
+        <p>Laravel</p>
+    </div>
+
+    <div class="skill-card">
+        <i class="devicon-mysql-plain colored text-5xl mb-4"></i>
+        <p>MySQL</p>
+    </div>
+
+    <div class="skill-card">
+        <i class="devicon-bootstrap-plain colored text-5xl mb-4"></i>
+        <p>Bootstrap</p>
+    </div>
+
+    <div class="skill-card">
+        <i class="devicon-flutter-plain colored text-5xl mb-4"></i>
+        <p>Flutter</p>
+    </div>
+
+</div>
+
+    </section>
+
+
+    <!-- experience -->
+    <section id="experience" class="sectionFade min-h-screen px-6 md:px-16 py-20">
+
+        <div class="text-center mb-14">
+            <h2 class="text-4xl font-bold text-red-300">My Experience</h2>
+            <p class="text-gray-400 mt-2">Journey & real project involvement</p>
+        </div>
+
+        <div class="space-y-10">
+
+            <div onclick="focusImage('exp1img')" class="expCard glass rounded-2xl p-8 cursor-pointer">
+                <div id="exp1img" class="expImage mb-6 h-60 rounded-xl overflow-hidden relative">
+                    <img src="image/project11.png" class="w-full h-full object-cover opacity-80">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+
+                </div>
+
+                <h3 class="text-2xl font-semibold text-red-400">Project Kampus</h3>
+                <p class="text-gray-400 text-sm mb-4">Semester 1 & 2 • 2024-2025</p>
+
+                <p class="text-gray-300 leading-relaxed">
+                    Mengerjakan beberapa proyek website dan aplikasi sederhana sebagai
+                    proyek akhir menggunakan HTML, CSS, JavaScript, Laravel dan Flutter.
+                </p>
+
+            </div>
+
+            <div onclick="focusImage('exp2img')" class="expCard glass rounded-2xl p-8 cursor-pointer">
+
+                <div id="exp2img" class="expImage mb-6 h-60 rounded-xl overflow-hidden relative">
+                    <img src="image/kegiatan1 (2).png" class="w-full h-full object-cover opacity-80">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+
+                </div>
+
+                <h3 class="text-2xl font-semibold text-red-400">Event & Webinar</h3>
+                <p class="text-gray-400 text-sm mb-4">Developer Community • 2024-Now</p>
+                <p class="text-gray-300">
+                    Aktif mengikuti berbagai webinar teknologi untuk meningkatkan skill dan networking.</p>
+
+            </div>
+
+            <div onclick="focusImage('exp3img')" class="expCard glass rounded-2xl p-8 cursor-pointer">
+
+                <div id="exp3img" class="expImage mb-6 h-60 rounded-xl overflow-hidden relative">
+
+                    <img src="image/kegiatan10.png" class="w-full h-full object-cover opacity-80">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+
+                </div>
+
+                <h3 class="text-2xl font-semibold text-red-400">IT Teacher - High School</h3>
+                <p class="text-gray-400 text-sm mb-4">Technology Education • 2025-Feb 2026</p>
+
+                <p class="text-gray-300"> Mengajar dasar pemrograman dan pengembangan web untuk siswa SMA. </p>
+                <br>
+                  <a href="activity.html" class="btn-red glow">See More Activities</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- contact  -->
+    <section id="contact" class="min-h-screen flex items-center px-6 md:px-16 py-20">
+
+        <div class="w-full max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-red-300">Get In Touch</h2>
+                <p class="text-gray-400 mt-2">
+                    Open for internship, collaboration, and freelance opportunities.
+                </p>
+            </div>
+
+            <div class="glass rounded-2xl p-10 grid md:grid-cols-2 gap-12 glow">
+                <div>
+                    <h3 class="text-2xl font-semibold text-red-400 mb-6">
+                        Contact Information
+                    </h3>
+
+                    <div class="space-y-5">
+
+                        <a href="mailto:wafiyatin@gmail.com" class="contactItem">
+                            <i data-lucide="mail"></i>
+                            <span>wafiyatin@gmail.com</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/wafiyatin-athiyyah-19a765318" target="_blank"
+                            class="contactItem">
+                            <i data-lucide="linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+
+                        <a href="https://github.com/wafi-prog" target="_blank" class="contactItem">
+                            <i data-lucide="github"></i>
+                            <span>GitHub Profile</span>
+                        </a>
+
+                        <a href="https://instagram.com/fiyh._04" target="_blank" class="contactItem">
+                            <i data-lucide="instagram"></i>
+                            <span>@fiyh._04</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center text-center">
+
+                    <h3 class="text-2xl font-semibold text-red-400 mb-4">
+                        Let's Work Together
+                    </h3>
+
+                    <p class="text-gray-300 mb-6">
+                        Ready to contribute and build impactful projects.
+                    </p>
+
+                    <a href="mailto:wafiyatin@gmail.com" class="btn-contact">
+                        Send Message
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/file.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
