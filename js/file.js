@@ -79,14 +79,15 @@
 
         const sections = document.querySelectorAll(".sectionFade");
 
-        window.addEventListener("scroll", () => {
-            sections.forEach(sec => {
-                const top = sec.getBoundingClientRect().top;
-                if (top < window.innerHeight - 100) {
-                    sec.classList.add("show");
-                }
-            });
-        });
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+}, { threshold: 0.1 });
+
+sections.forEach(sec => observer.observe(sec));
 
         function toggleMenu() {
          const menu = document.getElementById("mobileMenu");
